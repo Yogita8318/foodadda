@@ -17,5 +17,12 @@ public class Exceptions
 		return "exception"; 
 	}
 
+	@ExceptionHandler(value=Exception.class)
+	public String handlerMethod()
+	{
+		System.out.println("Exception Handled..!!!!");
+		return "exception";
+	}
+
 
 }
